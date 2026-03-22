@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-data_store = []
+data_store = [{"name": "chandra", "role": "admin"}]
 
 @app.route("/")
 def home():
